@@ -1,0 +1,25 @@
+.users {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  margin: 4rem 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .users {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .users {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .users {
+    grid-template-columns: 1fr;
+  }
+}
